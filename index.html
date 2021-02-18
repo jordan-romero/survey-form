@@ -9,7 +9,22 @@
 <body>
     <h1 id='title'>Survey Form</h1>
     <p id='description'>Tell us how we can improve in the future!</p>
-    <form id='survey-form'></form>
+    <form id='survey-form'>
+        <label for='name'>
+            Enter your name
+            <input id='name' type='text' name='name' placeholder='First and Last Name' required>
+        </label>
+        <label for='email'>
+            Enter your email 
+            <input id='email' type='email' name='email' required>
+        </label>
+        <label for='number'>
+            Age (optional)
+            <input type="number" id='number' name='number' placeholder='Age'>
+        </label>
+        
+
+    </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 </html>
