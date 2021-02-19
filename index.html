@@ -14,47 +14,41 @@
         <h1 id='title'>Flunkiron Survey Form</h1>
         <p id='description'>Tell us how we can improve in the future!</p>
         <form id='survey-form'>
-            <label for='name' id='name-label'>
-                Enter your name
-                <input id='name' type='text' name='name' placeholder='First and Last Name' required>
-            </label>
-            <label for='email' id='email-label'>
-                Enter your email 
-                <input id='email' type='email' name='email' placeholder='email' required>
-            </label>
-            <label for='number' id='number-label'>
-                Age (optional)
-                <input type="number" id='number' name='number' placeholder='Age' min='1' max='130'>
-            </label>
-            <label for='dropdown'>
-                Select an Employment Status
-                <select id='dropdown' name='roles' placeholder='Employment Status'>
+            <label for='name' id='name-label' class='label'>Enter your name</label>
+            <input id='name' type='text' name='name' class='input' placeholder='First and Last Name' required>
+            <label for='email' id='email-label' class='label'>Enter your email</label>
+            <input id='email' type='email' name='email' class='input' placeholder='email' required>
+            <label for='number' id='number-label' class='label'>Age (optional)</label>
+            <input type="number" id='number' name='number' class='input' placeholder='Age' min='1' max='130'>
+            <label for='dropdown' class='label'>Select an Employment Status</label>
+                <select id='dropdown' name='roles' class='input' placeholder='Employment Status'>
                     <option value='student'>Student</option>
                     <option value='full-time'> Full Time Employment</option>
                     <option value='part-time'> Part Time Employment</option>
                     <option value='self'> Self Employed</option>
                     <option value='other'>Other</option>
                 </select>
-            </label>
+            <h4 class='button-header'>What is your gender?</h4>
             <input type="radio" name='gender' id='male' value='male'>
-            <label for='male'>Male</label>
+            <label for='male' class='label'>Male</label>
             <input type="radio" name='gender' id='female' value='female'>
-            <label for='female'>Female</label>
+            <label for='female' class='label'>Female</label>
             <input type="radio" name='gender' id='non-binary' value='non-binary'>
-            <label for='non-binary'>Non-Binary</label>
+            <label for='non-binary' class='label'>Non-Binary</label>
             <input type="radio" name='gender' id='not' value='prefer-not'>
-            <label for='not'>Prefer not to say</label>
+            <label for='not' class='label'>Prefer not to say</label>
             <input type="radio" name='gender' id='other-gen' value='other-gen'>
-            <label for='other-gen'>Other</label>
+            <label for='other-gen' class='label'>Other</label>
             
+            <h4 class='button-header'>How likely are you to refer Flunkiron to a friend?</h4>
             <input type="checkbox" name='reccommend' id='def' value='definitely'>
-            <label for='def'>Definitely</label>
+            <label for='def' class='label'>Definitely</label>
             <input type="checkbox" name='reccommend' id='maybe' value='maybe'>
-            <label for='maybe'>Maybe</label>
+            <label for='maybe' class='label'>Maybe</label>
             <input type="checkbox" name='reccommend' id='as-if' value='as-if'>
-            <label for='as-if'>As If!</label>
+            <label for='as-if' class='label'>As If!</label>
 
-            <label>
+            <label class='label'>
                 Tell us how we can Improve: 
                 <textarea id='comments'></textarea>
             </label>
