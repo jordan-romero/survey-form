@@ -1,0 +1,19 @@
+*,
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    text-align: center; 
+    font-size: 62.5%; 
+    line-height: 1.6; 
+    background-image: linear-gradient(to bottom, #D3D0CB, #393E41);
+    font-family: 'Lato', sans-serif;
+}
+
+#main {
+    height: 100vh; 
+}
