@@ -13,30 +13,39 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-#main {
+body::before {
     background-image:
     linear-gradient(to bottom, rgb(242, 143, 59, 0.4), rgb(200, 85, 61, .7)),
     url('images/background-img.jpg');
+    background-size: cover; 
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
     background-size: cover;
-    background-position: top;
-    height: 100vh; 
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 #title {
-    font-size: 3rem;
+    font-size: 2rem;
     letter-spacing: .3rem;
     color: #2b2d2F; 
 }
 
 #description {
-    font-size: 1.5rem;
+    font-size: 1rem;
     color: #2b2d2F; 
 }
 
 #survey-form {
     width: 70vh; 
-    height: 80vh; 
+    height: auto; 
     margin: 0 auto;
+    padding: 2rem; 
     border-radius: .5rem;
     background:rgba(255,255,255, 0.5);
     display: flex; 
@@ -58,5 +67,30 @@ body {
   .label {
       font-size: 1rem;
       color: #2b2d2F; 
-      margin-bottom: .5rem;
+      margin: .5rem 0;
+  }
+
+  .checks {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+  }
+
+  .boxes {
+      display: flex;
+      justify-content: center;
+  }
+  
+  .test {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+  }
+
+  .box {
+      margin-right: .25rem;
+  }
+
+  #submit {
+
   }

@@ -28,31 +28,58 @@
                     <option value='self'> Self Employed</option>
                     <option value='other'>Other</option>
                 </select>
-            <h4 class='button-header'>What is your gender?</h4>
-            <input type="radio" name='gender' id='male' value='male'>
-            <label for='male' class='label'>Male</label>
-            <input type="radio" name='gender' id='female' value='female'>
-            <label for='female' class='label'>Female</label>
-            <input type="radio" name='gender' id='non-binary' value='non-binary'>
-            <label for='non-binary' class='label'>Non-Binary</label>
-            <input type="radio" name='gender' id='not' value='prefer-not'>
-            <label for='not' class='label'>Prefer not to say</label>
-            <input type="radio" name='gender' id='other-gen' value='other-gen'>
-            <label for='other-gen' class='label'>Other</label>
-            
-            <h4 class='button-header'>How likely are you to refer Flunkiron to a friend?</h4>
-            <input type="checkbox" name='reccommend' id='def' value='definitely'>
-            <label for='def' class='label'>Definitely</label>
-            <input type="checkbox" name='reccommend' id='maybe' value='maybe'>
-            <label for='maybe' class='label'>Maybe</label>
-            <input type="checkbox" name='reccommend' id='as-if' value='as-if'>
-            <label for='as-if' class='label'>As If!</label>
-
-            <label class='label'>
-                Tell us how we can Improve: 
-                <textarea id='comments'></textarea>
-            </label>
-
+            <div class='checks'>
+            <h4 class='label'>What is your gender? (Totally optional)</h4>
+                <div class='boxes'>
+                    <div class='test'>
+                        <label for='male' class='label'>
+                            <input type="radio" name='gender' id='male' value='male' class='box'>
+                            Male
+                        </label>
+                        <label for='female' class='label'>
+                            <input type="radio" name='gender' id='female' value='female' class='box'>
+                            Female
+                        </label>
+                        <label for='non-binary' class='label'>
+                            <input type="radio" name='gender' id='non-binary' value='non-binary' class='box'>
+                            Non-Binary
+                        </label>
+                        <label for='not' class='label'>
+                            <input type="radio" name='gender' id='not' value='prefer-not' class='box'>
+                            Prefer not to say
+                        </label>
+                        <label for='other-gen' class='label'>
+                            <input type="radio" name='gender' id='other-gen' value='other-gen' class='box'>
+                            Other
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class='checks'>
+                <h4 class='label'>How likely are you to refer Flunkiron to a friend?</h4>
+                <div class='boxes'>
+                    <div class='test'>
+                        <label for='def' class='label'>
+                            <input type="checkbox" name='reccommend' id='def' value='definitely' class='box'>
+                            Definitely
+                        </label>
+                        <label for='maybe' class='label'>
+                            <input type="checkbox" name='reccommend' id='maybe' value='maybe' class='box'>
+                            Maybe
+                        </label>
+                        <label for='as-if' class='label'>
+                            <input type="checkbox" name='reccommend' id='as-if' value='as-if' class='box'>
+                            As If!
+                        </label>
+                    </div>
+                </div>  
+            </div>
+            <div>
+                <label class='label'>
+                    Tell us how we can Improve: 
+                    <textarea id='comments' class='input'></textarea>
+                </label>
+            </div>
             <button type='submit' id='submit'>Submit</button>
         </form>
     </main>
