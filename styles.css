@@ -10,7 +10,10 @@ body {
     text-align: center; 
     font-size: 62.5%; 
     line-height: 1.6; 
-    background-image: linear-gradient(to bottom, #D3D0CB, #393E41);
+    /* background-image: linear-gradient(to bottom, #, #393E41), url('./images/background-img.jpg'); */
+    background-image:
+    linear-gradient(to bottom, rgb(242, 143, 59, 0.4), rgb(200, 85, 61, .7)),
+    url('images/background-img.jpg');
     font-family: 'Lato', sans-serif;
 }
 
