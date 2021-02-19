@@ -10,13 +10,32 @@ body {
     text-align: center; 
     font-size: 62.5%; 
     line-height: 1.6; 
-    /* background-image: linear-gradient(to bottom, #, #393E41), url('./images/background-img.jpg'); */
-    background-image:
-    linear-gradient(to bottom, rgb(242, 143, 59, 0.4), rgb(200, 85, 61, .7)),
-    url('images/background-img.jpg');
     font-family: 'Lato', sans-serif;
 }
 
 #main {
+    background-image:
+    linear-gradient(to bottom, rgb(242, 143, 59, 0.4), rgb(200, 85, 61, .7)),
+    url('images/background-img.jpg');
+    background-size: cover;
+    background-position: top;
     height: 100vh; 
+}
+
+#title {
+    font-size: 3rem;
+    letter-spacing: .3rem;
+    color: #2b2d2F; 
+}
+
+#description {
+    font-size: 1.5rem;
+    color: #2b2d2F; 
+}
+
+#survey-form {
+    width: 75vh; 
+    height: 80vh; 
+    margin: 0 auto;
+    background-color: red;
 }
