@@ -31,13 +31,13 @@ body::before {
 }
 
 #title {
-    font-size: 2rem;
+    font-size: 3rem;
     letter-spacing: .3rem;
     color: #2b2d2F; 
 }
 
 #description {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #2b2d2F; 
 }
 
@@ -74,11 +74,7 @@ body::before {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-  }
-
-  .boxes {
-      display: flex;
-      justify-content: center;
+      align-content: center;
   }
   
   .test {
@@ -92,5 +88,17 @@ body::before {
   }
 
   #submit {
+    background-color: orange;
+    padding: 1.5rem; 
+    margin: 3rem; 
+    color: #2b2d2F; 
+    font-family: inherit;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer; 
+  }
 
+  #submit:hover {
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 0, .4);
   }
